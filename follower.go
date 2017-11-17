@@ -70,5 +70,5 @@ func (f *Follower) follow() {
 	}
 
 	// Channel closed, we return an error
-	f.errCh <- errors.New("Leader Election: watch leader channel closed, the store may be unavailable...")
+	f.errCh <- errors.New("leader Election: watch leader channel closed, the store may be unavailable")
 }
